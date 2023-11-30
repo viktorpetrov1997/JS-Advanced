@@ -1,16 +1,16 @@
-function sumOfNumbers(n,m)
+function sumOfNumbersInRange(frstNumber, secondNumber)
 {
-    let firstNumber = Number(n);
-    let secondNumber = Number(m);
-
+    let startNumber = Number(frstNumber);
+    let endNumber = Number(secondNumber);
+    
     let result = 0;
 
-    for(let i = firstNumber; i <= secondNumber; i++)
+    for(let i = startNumber; i <= endNumber; i++)
     {
         result += i;
     }
 
-    return result;
+    console.log(result);
 }
 
-console.log(sumOfNumbers('1','5'));
+sumOfNumbersInRange('1','5');

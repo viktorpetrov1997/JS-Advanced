@@ -14,4 +14,4 @@ function mathOperations(firstNumber, secondNumber, operator)
     console.log(result);
 }
 
-mathOperations(5,6,'*');
+mathOperations(5,6,'+');

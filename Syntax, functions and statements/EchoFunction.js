@@ -4,4 +4,4 @@ function echoString(string)
     console.log(string);
 }
 
-echoString("Hello, JavaScript!");
+echoString('Hello, JavaScript!');

@@ -1,14 +1,29 @@
-function performOperations(array) 
+function aggregateElements(array)
 {
-    const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    let sum = 0;
+
+    for(let i = 0; i < array.length; i++)
+    {
+        sum += array[i];
+    }
+
     console.log(sum);
-  
-    const inverseSum = array.reduce((accumulator, currentValue) => accumulator + 1 / currentValue, 0);
+
+    let inverseSum = 0;
+
+    for(let i = 0; i < array.length; i++)
+    {
+        inverseSum += 1 / array[i];
+    }
+
     console.log(inverseSum);
 
-    const concat = array.join('');
-    console.log(concat);
+    let concatenatedString = '';
+    for (let i = 0; i < array.length; i++) {
+        concatenatedString += String(array[i]);
+    }
+    console.log(concatenatedString);
 }
 
-const array = [1, 2, 3, 4, 5];
-performOperations(array);
+let inputArray = [1, 2, 3];
+aggregateElements(inputArray)

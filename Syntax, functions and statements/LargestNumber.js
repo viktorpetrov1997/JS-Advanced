@@ -2,7 +2,7 @@ function largestNumber(firstNumber, secondNumber, thirdNumber)
 {
     let largestNumber;
 
-    if(firstNumber > secondNumber && secondNumber > thirdNumber)
+    if(firstNumber > secondNumber && firstNumber > thirdNumber)
     {
         largestNumber = firstNumber;
     }
@@ -15,8 +15,7 @@ function largestNumber(firstNumber, secondNumber, thirdNumber)
         largestNumber = thirdNumber;
     }
 
-    //console.log("The largest number is " + largestNumber + "."); 
     console.log(`The largest number is ${largestNumber}.`);
 }
 
-largestNumber(5,-3,16);
+largestNumber(5, -3, 16);

@@ -1,15 +1,16 @@
 function circleArea(radius)
 {
-    if(typeof(radius) === 'number')
+    let inputType = typeof(radius);
+
+    if(inputType === 'number')
     {
-        let area = Math.pow(radius,2) * Math.PI;
+        let area = Math.pow(radius, 2) * Math.PI;
         console.log(area.toFixed(2));
     }
     else
     {
-        console.log(`We can not calculate the circle area, because we receive a ${typeof radius}.`);
+        console.log(`We can not calculate the circle area, because we receive a ${inputType}.`);
     }
 }
 
 circleArea(5);
-
