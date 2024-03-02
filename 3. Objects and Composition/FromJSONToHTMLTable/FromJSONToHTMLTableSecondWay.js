@@ -44,7 +44,7 @@ function fromJSONToHTMLTable(json)
         })
     }
     
-    return output;
+    console.log(output);
 }
 
 fromJSONToHTMLTable(`[{"Name":"Stamat","Score":5.5},{"Name":"Rumen","Score":6}]`);
