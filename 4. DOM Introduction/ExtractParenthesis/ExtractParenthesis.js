@@ -15,5 +15,5 @@ function extract(elementId)
     }
 
     return result.join('; ');
-    //document.getElementById('result').textContent = result.join('; ');  Way to print it in the browser
+    //document.getElementById('result').textContent = result.join('; '); Way yo print the result in the browser
 }
