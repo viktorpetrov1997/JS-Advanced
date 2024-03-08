@@ -15,3 +15,20 @@ function focused()
         });
     }
 }
+
+/*function focused() 
+{
+    const container = document.querySelector('div');
+    
+    container.addEventListener('focus', (e) => {
+        if (e.target.matches('input')) {
+            e.target.parentNode.classList.add('focused');
+        }
+    }, true); // Use capturing phase
+    
+    container.addEventListener('blur', (e) => {
+        if (e.target.matches('input')) {
+            e.target.parentNode.classList.remove('focused');
+        }
+    }, true); // Use capturing phase
+}*/

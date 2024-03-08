@@ -10,12 +10,19 @@ function addItem()
     let newItem = document.createElement("li");
 
     // Set the text content of the list item
-    newItem.textContent = newItemText;
+    newItem.appendChild(document.createTextNode(newItemText)); //We use createTextNode to prevent XSS attacks when inputing value
+    //newItem.textContent = newItemText; Second way without using createTextNode
 
     // Create a delete link
     let deleteLink = document.createElement("a");
     deleteLink.href = "#";
     deleteLink.textContent = "[Delete]";
+
+    // Append the delete link to the list item
+    newItem.appendChild(deleteLink);
+
+    // Append the new list item to the items list
+    itemsList.appendChild(newItem);
 
     // Add a click event listener to the delete link
     deleteLink.addEventListener("click", function () 
@@ -23,12 +30,6 @@ function addItem()
         // Remove the corresponding list item when the delete link is clicked
         itemsList.removeChild(newItem);
     });
-
-    // Append the delete link to the list item
-    newItem.appendChild(deleteLink);
-
-    // Append the new list item to the items list
-    itemsList.appendChild(newItem);
 
     // Clear the input field
     document.getElementById("newItemText").value = "";

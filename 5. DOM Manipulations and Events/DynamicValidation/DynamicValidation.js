@@ -1,16 +1,16 @@
 function validate() 
 {
     // Get the email input element
-    var emailInput = document.getElementById("email");
+    const emailInput = document.getElementById("email");
 
     // Add a change event listener to the email input
     emailInput.addEventListener("change", function () 
     {
         // Get the entered email value
-        var emailValue = emailInput.value.trim().toLowerCase();
+        const emailValue = emailInput.value.trim().toLowerCase();
 
         // Regular expression for a valid email format
-        var emailPattern = /^[a-z]+@[a-z]+\.[a-z]+$/;
+        const emailPattern = /^[a-z]+@[a-z]+\.[a-z]+$/;
 
         // Check if the entered email matches the valid format
         if (emailPattern.test(emailValue)) 

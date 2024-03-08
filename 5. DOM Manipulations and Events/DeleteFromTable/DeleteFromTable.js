@@ -1,11 +1,11 @@
 function deleteByEmail()
 {
-    let email = document.getElementsByName("email")[0].value;
-    let secondColumn = document.querySelectorAll("#customers tr td:nth-child(2)");
-    
-    for(let td of secondColumn)
+    let input = document.getElementsByName("email")[0].value;
+    let emails = document.querySelectorAll("#customers tr td:nth-child(2)");
+
+    for(let td of emails)
     {
-        if(td.textContent == email) 
+        if(td.textContent == input)
         {
             let row = td.parentNode;
             row.parentNode.removeChild(row);
@@ -13,6 +13,6 @@ function deleteByEmail()
             return;
         }
     }
-    
+
     document.getElementById('result').textContent = "Not found.";
 }
