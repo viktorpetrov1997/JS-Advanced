@@ -53,4 +53,4 @@ console.log(person.fullName); //George Peterson
 person.fullName = "Nikola Tesla";
 console.log(person.firstName); //Nikola
 console.log(person.lastName); //Tesla
-console.log(person.fullName); //Tesla
+console.log(person.fullName); //Nikola Tesla
