@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="contacts_builder.js"></script>
+    <title>Contacts Builder</title>
+</head>
+
+<body>
+    <div id="main">
+        <article>
+            <div class="title">{firstName lastName}<button>&#8505;</button></div>
+            <div class="info">
+                <span>&phone; {phone}</span>
+                <span>&#9993; {email}</span>
+            </div>
+        </article>
+    </div>
+    <script>
+        // Initialize contacts array
+        let contacts = [
+            new Contact("Ivan", "Ivanov", "0888 123 456", "i.ivanov@gmail.com"),
+            new Contact("Maria", "Petrova", "0899 987 654", "mar4eto@abv.bg"),
+            new Contact("Jordan", "Kirov", "0988 456 789", "jordk@gmail.com")
+        ];
+
+        // Render contacts
+        contacts.forEach(c => c.render('main'));
+    </script>
+</body>
+
+</html>
