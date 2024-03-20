@@ -1,7 +1,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const carService = require('./carService');
+const carService = require('./car_service');
 
 
 describe('carService object tests', function() 
