@@ -17,9 +17,12 @@ In the "JS Advanced" course, students will gain in-depth knowledge of the JavaSc
 * Exam Preparation
 
 ## Acquired skills
-* Handling the standard functionality of the programming language
-* Problem analysis and reduction to computer-executable steps
-* Working with linear data structures
-* Basic HTML and CSS skills
-* Understanding the interrelationship between different IT concepts
+* Working with linear structures
+* Working with classes and objects
+* Application of object-oriented programming
+* Information extraction and manipulation of the DOM tree
+* Working with functions and JSON formats
+* Application of functional programming
+
 ## Certificate :heavy_check_mark:
+![JS Advanced - Certificate](https://github.com/viktorpetrov1997/JS-Advanced/assets/126717931/f30e3bbe-b683-4ad6-bbf0-767559d4139e)
